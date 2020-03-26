@@ -3,7 +3,7 @@
 int main()
 {
     int ival = 42;
-    int* p = &ival;
+    int *p = &ival;
 
     std::cout << *p << ", " << &ival << std::endl;
     std::cout << p << ", " << ival << std::endl;

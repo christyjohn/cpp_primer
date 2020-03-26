@@ -3,7 +3,7 @@
 int main()
 {   
     int val = 42;
-    int* p = &val;
+    int *p = &val;
 
     std::cout << "val: " << val << ", p: " << p 
         << ", content at address p: " << *p << std::endl; 
