@@ -8,7 +8,7 @@ int main()
 {
     string line;
 
-    // read input a line at a time untilend-of-file
+    // read input a line at a time until end-of-file
     while (getline(cin, line))
         if(!line.empty())
             cout << line << endl;
