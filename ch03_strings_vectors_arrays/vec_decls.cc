@@ -1,0 +1,48 @@
+#include <iostream>
+using std::cout; using std::endl;
+
+#include <string>
+using std::string;
+
+#include <vector>
+using std::vector;
+
+#include "Sales_item.h"
+
+int main()
+{
+    // list initialization, articles has 3 elements
+    vector<string> articles = {"a", "an", "the"};
+
+    vector<string> svec;            // default initialization: svec has no elements
+    vector<int> ivec;               // ivec holds objects of type int
+    vector<Sales_item> Sales_vec;   // holds Sales_items
+
+    vector<vector<string>> file;    // vector whose elements are vectors
+    vector<vector<int>> vecOfvec;   // each element is itself a vector
+
+    // all five vectors have size 0
+    cout << svec.size() << " " << ivec.size() << " "
+         << Sales_vec.size() << " "
+         << file.size() << " " << vecOfvec.size() << endl;
+
+    vector<int> ivec2(10);          // ten elements, each initialized to 0
+    vector<int> ivec3(10, -1);      // ten elements, each initialized to -1
+    vector<string> svec2(10);       // ten elements, each an empty string
+    vector<string> svec3(10, "hi!");// ten string; each element is "hi!"
+    cout << ivec2.size() << " " << ivec3.size() << " "
+         << svec2.size() << " " << svec3.size() << endl;
+
+    vector<string>vs1{"hi"};        // list initialization: vs1 has 1 element 
+    vector<string>vs2{10};          // ten default-initialized elements
+    vector<string>vs3{10, "hi"};    // has ten elements with value "hi"
+    cout << vs1.size() << " " << vs2.size() << " " << vs3.size() << endl;
+
+    vector<int>v5(10, 1);           // ten elements with value 1
+    vector<int>v6{10, 1};           // two elementswith values 10 and 1
+    cout << v5.size() << " " << v6.size() << endl;
+         
+    return 0;
+}
+
+
