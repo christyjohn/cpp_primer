@@ -1,5 +1,5 @@
 #include <string> 
-using std::string; using std::getline;
+using std::string;
 
 #include <iostream> 
 using std::cin; using std::cout; using std::endl;
